@@ -62,10 +62,10 @@ public class IotConfig {
             log.info("配置文件加载...");
 
             ClassLoader classLoader = getClass().getClassLoader();
-            String configFilePath = classLoader.getResource("Config.xml").getFile();
+            String configFilePath = classLoader.getResource("Config_v1.2.xml").getFile();
 
             if (!new File(configFilePath).exists()) {
-                configFilePath = getParentDirectoryFromJar() + "/Config.xml";
+                configFilePath = getParentDirectoryFromJar() + "/Config_v1.2.xml";
             }
 
             boolean isOk = load(configFilePath);
