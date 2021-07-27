@@ -8,11 +8,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5e203fd-99ad-431d-9f6c-ce747ff0e88c" name="Default Changelist" comment="增加了RTK驱动程序解析航向、速度信息的功能">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/rh/iot/driver/RTKDriver_plus.java" afterDir="false" />
+    <list default="true" id="c5e203fd-99ad-431d-9f6c-ce747ff0e88c" name="Default Changelist" comment="利用事件处理机制，将MqttChannel与Device对象解耦">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/rh/iot/driver/RTKDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/rh/iot/driver/RTKDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cn/rh/iot/IotApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/rh/iot/IotApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +78,9 @@
     <property name="project.structure.side.proportion" value="0.31964484" />
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\proj\drone\drone-iot\src\main\resources" />
@@ -90,7 +92,7 @@
       <recent name="D:\proj\drone\drone-iot\var" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.IotApplicationTests.TestGPRMC">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -113,6 +115,25 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="IotApplicationTests.TestGPRMC" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;cn.rh.iot.IotApplicationTests.TestGPRMC&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
@@ -146,6 +167,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.IotApplication" />
+      <item itemvalue="Gradle.IotApplicationTests.TestGPRMC" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.IotApplicationTests.TestGPRMC" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -170,6 +200,52 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="增加了RTK驱动程序解析航向、速度信息的功能" />
     <option name="LAST_COMMIT_MESSAGE" value="增加了RTK驱动程序解析航向、速度信息的功能" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1877" height="421" key="GridCell.Tab.0.bottom" timestamp="1627367639907">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="421" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1627367639907" />
+    <state width="1877" height="421" key="GridCell.Tab.0.center" timestamp="1627367639907">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="421" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1627367639907" />
+    <state width="1877" height="421" key="GridCell.Tab.0.left" timestamp="1627367639907">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="421" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1627367639907" />
+    <state width="1877" height="421" key="GridCell.Tab.0.right" timestamp="1627367639907">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="421" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1627367639907" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1627366452751">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1627366452751" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1627366452751">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1627366452751" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1627366452751">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1627366452751" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1627366452751">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1627366452751" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Remote">
+        <watch expression="valueList[9].substring(4)" language="JAVA" />
+        <watch expression="valueList[9].substring(2,4)" language="JAVA" />
+        <watch expression="valueList[9].substring(0,2)" language="JAVA" />
+        <watch expression="valueList[1].substring(0,2)" language="JAVA" />
+        <watch expression="valueList[1].substring(2,4)" language="JAVA" />
+        <watch expression="valueList[1].substring(4)" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Iot_Controller$test_testFun2.ic" NAME="test.testFun2 Coverage Results" MODIFIED="1601133809518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
