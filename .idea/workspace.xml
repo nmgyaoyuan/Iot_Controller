@@ -8,12 +8,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5e203fd-99ad-431d-9f6c-ce747ff0e88c" name="Default Changelist" comment="利用事件处理机制，将MqttChannel与Device对象解耦">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/rh/iot/driver/base/ITranslator.java" afterDir="false" />
+    <list default="true" id="c5e203fd-99ad-431d-9f6c-ce747ff0e88c" name="Default Changelist" comment="利用$GPRMC(或$GNRMC),获取卫星时间戳，用于校准本地时间">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MockTools/MQTTX.Setup.1.3.3.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/rh/iot/IotApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/rh/iot/driver/RTKDriver_plus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/rh/iot/driver/RTKDriver_12.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Config_v1.0_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -409,7 +407,8 @@
     <MESSAGE value="增加了CRC校验错误的日志项" />
     <MESSAGE value="增加RTKDriver_plus驱动，支持发送航向、速度数据" />
     <MESSAGE value="利用事件处理机制，将MqttChannel与Device对象解耦" />
-    <option name="LAST_COMMIT_MESSAGE" value="利用事件处理机制，将MqttChannel与Device对象解耦" />
+    <MESSAGE value="利用$GPRMC(或$GNRMC),获取卫星时间戳，用于校准本地时间" />
+    <option name="LAST_COMMIT_MESSAGE" value="利用$GPRMC(或$GNRMC),获取卫星时间戳，用于校准本地时间" />
   </component>
   <component name="WindowStateProjectService">
     <state x="710" y="505" key="#Notifications" timestamp="1625655340417">

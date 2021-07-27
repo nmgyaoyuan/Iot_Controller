@@ -4,10 +4,13 @@ import cn.rh.iot.driver.base.FrameType;
 import cn.rh.iot.driver.base.IDriver;
 
 import java.nio.charset.StandardCharsets;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
+import java.util.TimeZone;
 
 
-public class RTKDriver_plus implements IDriver {
+public class RTKDriver_12 implements IDriver {
 
     private final byte[] Delimiter=new byte[]{0x0D,0x0A};  //回车+换行符 \r\n
 
@@ -58,13 +61,14 @@ public class RTKDriver_plus implements IDriver {
 
                 return  "\"msgId\":" + 2 + "," + System.lineSeparator() +
                         "\"payload\":{" + System.lineSeparator() +
+                        "\"subkind\":" + 1 + System.lineSeparator() +
                         "\"lon\":" + lon + "," + System.lineSeparator() +
                         "\"lat\":" + lat + "," + System.lineSeparator() +
                         "\"alt\":" + alt + "," + System.lineSeparator() +
                         "\"qos\":" + quality + System.lineSeparator() +
                         "}";
 
-            }else if(sHead.equals("$GPVTG")){
+            }else if(sHead.equals("$GPVTG") || sHead.equals("$GNVTG")){
 
                 double true_north_direction;
                 double velocity;
@@ -82,10 +86,33 @@ public class RTKDriver_plus implements IDriver {
 
                 return  "\"msgId\":" + 2 + "," + System.lineSeparator() +
                         "\"payload\":{" + System.lineSeparator() +
+                        "\"subkind\":" + 2 + System.lineSeparator() +
                         "\"direction\":" + true_north_direction + "," + System.lineSeparator() +
                         "\"velocity\":" + velocity + System.lineSeparator() +
                         "}";
 
+            }else if((sHead.equals("$GPRMC") || sHead.equals("$GNRMC")) && valueList[2].toUpperCase().equals("A")){
+
+                //拼接UTC时间字符串
+                StringBuilder sb = new StringBuilder();
+                sb.append("20").append(valueList[9].substring(4)).append("-").append(valueList[9].substring(2,4)).append("-").append(valueList[9].substring(0,2));
+                sb.append(" ").append(valueList[1].substring(0,2)).append(":").append(valueList[1].substring(2,4)).append(":").append(valueList[1].substring(4));
+
+                //将UTC时间转换为本地时间（北京时间）
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
+                sdf.setTimeZone(TimeZone.getTimeZone("UTC"));
+
+                Date utcDate = null;
+                utcDate = sdf.parse(sb.toString());
+                sdf.setTimeZone(TimeZone.getDefault());
+                String ts=sdf.format(utcDate.getTime());
+
+                //输出json
+                return "\"msgId\":" + 2 + "," + System.lineSeparator() +
+                        "\"payload\":{" + System.lineSeparator() +
+                        "\"subkind\":" + 3 + System.lineSeparator() +
+                        "\"timestamp\":" + "\""+ ts +"\""+System.lineSeparator()+
+                        "}";
             }else{
                 return null;
             }
