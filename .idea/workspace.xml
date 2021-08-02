@@ -8,11 +8,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5e203fd-99ad-431d-9f6c-ce747ff0e88c" name="Default Changelist" comment="利用事件处理机制，将MqttChannel与Device对象解耦">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/rh/iot/driver/RTKDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/rh/iot/driver/RTKDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/rh/iot/driver/RTKDriver_plus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/rh/iot/driver/RTKDriver_plus.java" afterDir="false" />
-    </list>
+    <list default="true" id="c5e203fd-99ad-431d-9f6c-ce747ff0e88c" name="Default Changelist" comment="利用事件处理机制，将MqttChannel与Device对象解耦" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -167,6 +163,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.IotApplicationTests.TestGPRMC" />
         <item itemvalue="Gradle.IotApplicationTests.TestGPRMC" />
         <item itemvalue="Gradle.IotApplicationTests.TestGPRMC" />
       </list>
