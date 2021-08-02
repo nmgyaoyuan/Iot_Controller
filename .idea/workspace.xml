@@ -10,8 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c5e203fd-99ad-431d-9f6c-ce747ff0e88c" name="Default Changelist" comment="利用$GPRMC(或$GNRMC),获取卫星时间戳，用于校准本地时间">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/rh/iot/driver/RTKDriver_plus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/rh/iot/driver/RTKDriver_12.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Config_v1.0_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/rh/iot/driver/RTKDriver_12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/rh/iot/driver/RTKDriver_12.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,17 +142,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -346,6 +334,10 @@
       <workItem from="1625656754436" duration="2708000" />
       <workItem from="1625659714058" duration="94000" />
       <workItem from="1625904221300" duration="719000" />
+      <workItem from="1627550230603" duration="207000" />
+      <workItem from="1627550574782" duration="278000" />
+      <workItem from="1627613266922" duration="104000" />
+      <workItem from="1627871970980" duration="109000" />
     </task>
     <task id="LOCAL-00001" summary="第一次创建">
       <created>1617705118320</created>
@@ -382,7 +374,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619679251704</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="利用$GPRMC(或$GNRMC),获取卫星时间戳，用于校准本地时间">
+      <created>1627368495066</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1627368495066</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,10 +418,6 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="520" y="281" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619682399912" />
-    <state x="656" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617285651433">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="656" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1617285651433" />
     <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1619658312885">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -439,38 +434,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1619397746703" />
-    <state width="1860" height="345" key="GridCell.Tab.0.bottom" timestamp="1622700209172">
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1627368841933">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="345" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1622700209172" />
-    <state width="1860" height="345" key="GridCell.Tab.0.center" timestamp="1622700209172">
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1627368841933" />
+    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1627368841933">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="345" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1622700209172" />
-    <state width="1860" height="345" key="GridCell.Tab.0.left" timestamp="1622700209172">
+    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1627368841933" />
+    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1627368841933">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="345" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1622700209172" />
-    <state width="1860" height="345" key="GridCell.Tab.0.right" timestamp="1622700209172">
+    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1627368841933" />
+    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1627368841933">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="345" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1622700209172" />
-    <state width="1860" height="345" key="GridCell.Tab.1.bottom" timestamp="1622700209172">
+    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1627368841933" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1627368841933">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="345" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1622700209172" />
-    <state width="1860" height="345" key="GridCell.Tab.1.center" timestamp="1622700209172">
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1627368841933" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1627368841933">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="345" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1622700209172" />
-    <state width="1860" height="345" key="GridCell.Tab.1.left" timestamp="1622700209172">
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1627368841933" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1627368841933">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="345" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1622700209172" />
-    <state width="1860" height="345" key="GridCell.Tab.1.right" timestamp="1622700209172">
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1627368841933" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1627368841933">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="345" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1622700209172" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1627368841933" />
     <state width="1860" height="345" key="GridCell.Tab.2.bottom" timestamp="1622700209172">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -499,10 +494,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1625904828303" />
-    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1625658694993">
+    <state x="552" y="239" width="923" height="534" key="Vcs.Push.Dialog.v2" timestamp="1627368510457">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1625658694993" />
+    <state x="552" y="239" width="923" height="534" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1627368510457" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1619659097525">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

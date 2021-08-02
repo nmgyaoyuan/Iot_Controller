@@ -61,7 +61,7 @@ public class RTKDriver_12 implements IDriver {
 
                 return  "\"msgId\":" + 2 + "," + System.lineSeparator() +
                         "\"payload\":{" + System.lineSeparator() +
-                        "\"subkind\":" + 1 + System.lineSeparator() +
+                        "\"subkind\":"+ 1 +"," + System.lineSeparator() +
                         "\"lon\":" + lon + "," + System.lineSeparator() +
                         "\"lat\":" + lat + "," + System.lineSeparator() +
                         "\"alt\":" + alt + "," + System.lineSeparator() +
@@ -86,7 +86,7 @@ public class RTKDriver_12 implements IDriver {
 
                 return  "\"msgId\":" + 2 + "," + System.lineSeparator() +
                         "\"payload\":{" + System.lineSeparator() +
-                        "\"subkind\":" + 2 + System.lineSeparator() +
+                        "\"subkind\":" + 2 + ","+ System.lineSeparator() +
                         "\"direction\":" + true_north_direction + "," + System.lineSeparator() +
                         "\"velocity\":" + velocity + System.lineSeparator() +
                         "}";
@@ -110,7 +110,7 @@ public class RTKDriver_12 implements IDriver {
                 //输出json
                 return "\"msgId\":" + 2 + "," + System.lineSeparator() +
                         "\"payload\":{" + System.lineSeparator() +
-                        "\"subkind\":" + 3 + System.lineSeparator() +
+                        "\"subkind\":" + 3 + ","+System.lineSeparator() +
                         "\"timestamp\":" + "\""+ ts +"\""+System.lineSeparator()+
                         "}";
             }else{
