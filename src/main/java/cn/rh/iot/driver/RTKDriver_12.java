@@ -60,7 +60,7 @@ public class RTKDriver_12 implements IDriver {
                 alt=Double.parseDouble(valueList[9]);
 
                 return  "\"msgId\":" + 2 + "," + System.lineSeparator() +
-                        "\"payload\":{" + System.lineSeparator() +
+                        "\"payload\":{"        + System.lineSeparator() +
                         "\"subkind\":"+ 1 +"," + System.lineSeparator() +
                         "\"lon\":" + lon + "," + System.lineSeparator() +
                         "\"lat\":" + lat + "," + System.lineSeparator() +
@@ -84,8 +84,8 @@ public class RTKDriver_12 implements IDriver {
                 sV=valueList[7];
                 velocity=Integer.parseInt(sV.substring(0,2));
 
-                return  "\"msgId\":" + 2 + "," + System.lineSeparator() +
-                        "\"payload\":{" + System.lineSeparator() +
+                return  "\"msgId\":" + 2   + ","+ System.lineSeparator() +
+                        "\"payload\":{"         + System.lineSeparator() +
                         "\"subkind\":" + 2 + ","+ System.lineSeparator() +
                         "\"direction\":" + true_north_direction + "," + System.lineSeparator() +
                         "\"velocity\":" + velocity + System.lineSeparator() +
@@ -108,9 +108,9 @@ public class RTKDriver_12 implements IDriver {
                 String ts=sdf.format(utcDate.getTime());
 
                 //输出json
-                return "\"msgId\":" + 2 + "," + System.lineSeparator() +
-                        "\"payload\":{" + System.lineSeparator() +
-                        "\"subkind\":" + 3 + ","+System.lineSeparator() +
+                return "\"msgId\":" + 2 + ","   + System.lineSeparator() +
+                        "\"payload\":{"         + System.lineSeparator() +
+                        "\"subkind\":" + 3 + ","+ System.lineSeparator() +
                         "\"timestamp\":" + "\""+ ts +"\""+System.lineSeparator()+
                         "}";
             }else{
