@@ -42,7 +42,7 @@
 <!--            <Channel IP="127.0.0.1" Port="4008" />-->
 <!--            <Devices>-->
 <!--                <Device name="RTK" des="车载RTK">-->
-<!--                    <Driver>cn.rh.iot.driver.RTKDriver</Driver>-->
+<!--                    <Driver>cn.rh.iot.driver.RTKDriver_12</Driver>-->
 <!--                    <PubTopic>RTK/Info</PubTopic>-->
 <!--                </Device>-->
 <!--            </Devices>-->

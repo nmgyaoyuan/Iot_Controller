@@ -10,7 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c5e203fd-99ad-431d-9f6c-ce747ff0e88c" name="Default Changelist" comment="利用$GPRMC(或$GNRMC),获取卫星时间戳，用于校准本地时间">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/rh/iot/driver/RTKDriver_12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/rh/iot/driver/RTKDriver_12.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Config_v1.2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Config_v1.2.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
