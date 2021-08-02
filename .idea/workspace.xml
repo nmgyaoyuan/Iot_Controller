@@ -11,7 +11,7 @@
     <list default="true" id="c5e203fd-99ad-431d-9f6c-ce747ff0e88c" name="Default Changelist" comment="利用事件处理机制，将MqttChannel与Device对象解耦">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/rh/iot/driver/RTKDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/rh/iot/driver/RTKDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/rh/iot/IotApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/rh/iot/IotApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/rh/iot/driver/RTKDriver_plus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/rh/iot/driver/RTKDriver_plus.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +51,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Car_4_Drones_1.2" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JupyterTrust" id="e8e88ce1-37f1-4f2d-93a2-e84b53e7cf41" />
@@ -101,17 +106,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -168,11 +162,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.IotApplication" />
       <item itemvalue="Gradle.IotApplicationTests.TestGPRMC" />
+      <item itemvalue="Spring Boot.IotApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.IotApplicationTests.TestGPRMC" />
         <item itemvalue="Gradle.IotApplicationTests.TestGPRMC" />
       </list>
     </recent_temporary>

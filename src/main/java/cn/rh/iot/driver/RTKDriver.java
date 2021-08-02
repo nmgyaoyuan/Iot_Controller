@@ -38,7 +38,9 @@ public class RTKDriver implements IDriver {
             String s=new String(data, StandardCharsets.US_ASCII);
             String[] valueList=s.split(",");
 
-            if(valueList[0].toUpperCase().equals("$GPGGA")) {
+            String sHead=valueList[0].toUpperCase();
+
+            if(sHead.equals("$GPGGA")) {
 
                 double lat;
                 double lon;
@@ -59,37 +61,12 @@ public class RTKDriver implements IDriver {
                 quality = Integer.parseInt(valueList[6]);
                 alt = Double.parseDouble(valueList[9]);
 
-                return "\"msgId\":" + 2 + "," + System.lineSeparator() +
-                        "\"payload\":{" + System.lineSeparator() +
-                        "\"subkind\":" + 1 + System.lineSeparator() +
+                return "\"msgId\":" + 2 + ","  + System.lineSeparator() +
+                        "\"payload\":{"        + System.lineSeparator() +
                         "\"lon\":" + lon + "," + System.lineSeparator() +
                         "\"lat\":" + lat + "," + System.lineSeparator() +
                         "\"alt\":" + alt + "," + System.lineSeparator() +
                         "\"qos\":" + quality + System.lineSeparator() +
-                        "}";
-
-            }else if((valueList[0].toUpperCase().equals("$GPRMC") || valueList[0].toUpperCase().equals("$GNRMC"))
-                    && valueList[2].toUpperCase().equals("A")){
-
-                //拼接UTC时间字符串
-                StringBuilder sb = new StringBuilder();
-                sb.append("20").append(valueList[9].substring(4)).append("-").append(valueList[9].substring(2,4)).append("-").append(valueList[9].substring(0,2));
-                sb.append(" ").append(valueList[1].substring(0,2)).append(":").append(valueList[1].substring(2,4)).append(":").append(valueList[1].substring(4));
-
-                //将UTC时间转换为本地时间（北京时间）
-                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
-                sdf.setTimeZone(TimeZone.getTimeZone("UTC"));
-
-                Date utcDate = null;
-                utcDate = sdf.parse(sb.toString());
-                sdf.setTimeZone(TimeZone.getDefault());
-                String ts=sdf.format(utcDate.getTime());
-
-                //输出json
-                return "\"msgId\":" + 2 + "," + System.lineSeparator() +
-                        "\"payload\":{" + System.lineSeparator() +
-                        "\"subkind\":" + 3 + System.lineSeparator() +
-                        "\"timestamp\":" + "\""+ ts +"\""+System.lineSeparator()+
                         "}";
             }else{
                 return null;
