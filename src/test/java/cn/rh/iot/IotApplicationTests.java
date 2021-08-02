@@ -21,4 +21,22 @@ class IotApplicationTests {
         System.out.println(dr.decode(sValue.getBytes()));
     }
 
+    @Test
+    void TestHexString(){
+
+        int stateNumber=0x000F;
+
+        String s=Integer.toString(stateNumber);
+
+        System.out.println(s);
+
+        stateNumber=0x2280;
+
+        s=Integer.toString(stateNumber);
+
+        System.out.println(s);
+
+
+    }
+
 }

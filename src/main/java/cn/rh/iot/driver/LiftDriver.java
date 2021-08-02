@@ -103,7 +103,7 @@ public class LiftDriver implements IDriver {
         }
         sb = "\"msgId\":" + 2 + "," + System.lineSeparator() +
              "\"payload\":{" + System.lineSeparator() +
-             "\"stateNumber\":" + Integer.toHexString(stateNumber) + "," + System.lineSeparator() +
+             "\"stateNumber\":" + Integer.toString(stateNumber) + "," + System.lineSeparator() +
              "\"info\":" +"\""+ info +"\""+ System.lineSeparator()+
              "}";
         return sb;

@@ -66,7 +66,7 @@ public class RTKDriver implements IDriver {
                         "\"lon\":" + lon + "," + System.lineSeparator() +
                         "\"lat\":" + lat + "," + System.lineSeparator() +
                         "\"alt\":" + alt + "," + System.lineSeparator() +
-                        "\"qos\":" + quality + System.lineSeparator() +
+                        "\"qos\":" + quality   + System.lineSeparator() +
                         "}";
             }else{
                 return null;
