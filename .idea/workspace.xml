@@ -11,7 +11,6 @@
     <list default="true" id="c5e203fd-99ad-431d-9f6c-ce747ff0e88c" name="Default Changelist" comment="利用事件处理机制，将MqttChannel与Device对象解耦">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/rh/iot/driver/LiftDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/rh/iot/driver/LiftDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/rh/iot/driver/RTKDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/rh/iot/driver/RTKDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/cn/rh/iot/IotApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/rh/iot/IotApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,17 +110,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="IotApplicationTests.TestGPRMC" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -194,14 +182,14 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.IotApplicationTests.TestGPRMC" />
-      <item itemvalue="Spring Boot.IotApplication" />
       <item itemvalue="Gradle.IotApplicationTests.TestHexString" />
+      <item itemvalue="Spring Boot.IotApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.IotApplicationTests.TestHexString" />
         <item itemvalue="Gradle.IotApplicationTests.TestGPRMC" />
-        <item itemvalue="Gradle.IotApplicationTests.TestGPRMC" />
+        <item itemvalue="Gradle.IotApplicationTests.TestHexString" />
         <item itemvalue="Gradle.IotApplicationTests.TestGPRMC" />
         <item itemvalue="Gradle.IotApplicationTests.TestGPRMC" />
       </list>
