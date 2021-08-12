@@ -5,7 +5,7 @@
     <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
 
     <property name="LOG_PATTERN"
-              value="%d{yyyy-MM-dd HH:mm:ss.SSS} [${LOG_LEVEL_PATTERN:-%5p}] [%15.15t] [%15.15X{DIAGNOSTIC_UID}] [%15.15X{DIAGNOSTIC_ID}] [%-40.40logger{39}] : %msg%n%ex{full, java.lang.reflect.Method, io.undertow, org.springframework.aop, org.springframework.cglib, org.springframework.web, sun.reflect, net.sf.cglib, ByCGLIB}"/>
+              value="%d{yyyy-MM-dd HH:mm:ss.SSS} [${LOG_LEVEL_PATTERN:-%5p}] [%10.10t] [%-20.20logger{39}] : %msg%n%ex{full, java.lang.reflect.Method, io.undertow, org.springframework.aop, org.springframework.cglib, org.springframework.web, sun.reflect, net.sf.cglib, ByCGLIB}"/>
 
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <if condition='isNull("LOG_PATH")'>

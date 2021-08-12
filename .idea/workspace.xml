@@ -10,7 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c5e203fd-99ad-431d-9f6c-ce747ff0e88c" name="Default Changelist" comment="利用$GPRMC(或$GNRMC),获取卫星时间戳，用于校准本地时间">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Config_v1.2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Config_v1.2.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -338,6 +337,8 @@
       <workItem from="1627550574782" duration="278000" />
       <workItem from="1627613266922" duration="104000" />
       <workItem from="1627871970980" duration="109000" />
+      <workItem from="1628156176059" duration="1187000" />
+      <workItem from="1628745190590" duration="205000" />
     </task>
     <task id="LOCAL-00001" summary="第一次创建">
       <created>1617705118320</created>
@@ -430,26 +431,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1625904828302" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1619397746703">
+    <state width="1877" height="204" key="GridCell.Tab.0.bottom" timestamp="1628075650591">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1619397746703" />
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1627368841933">
+    <state width="1877" height="204" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1628075650591" />
+    <state width="1877" height="204" key="GridCell.Tab.0.center" timestamp="1628075650591">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1627368841933" />
-    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1627368841933">
+    <state width="1877" height="204" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1628075650591" />
+    <state width="1877" height="204" key="GridCell.Tab.0.left" timestamp="1628075650591">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1627368841933" />
-    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1627368841933">
+    <state width="1877" height="204" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1628075650591" />
+    <state width="1877" height="204" key="GridCell.Tab.0.right" timestamp="1628075650591">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1627368841933" />
-    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1627368841933">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1627368841933" />
+    <state width="1877" height="204" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1628075650591" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1627368841933">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -517,55 +514,5 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Iot_Controller$test_testFun2.ic" NAME="test.testFun2 Coverage Results" MODIFIED="1601133809518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.31964484" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.31964484" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.31964484" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
